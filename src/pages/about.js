@@ -14,7 +14,12 @@ const AboutPage = () => {
           classmate.{' '}
         </p>
         <p>We haven't see each other in 10 years, and I miss her very much.</p>
-        <StaticImage alt="one gile" src="../images/1girl.png" />
+        <StaticImage
+          alt="one gile"
+          src="../images/1girl.png"
+          width={400}
+          height={400}
+        />
       </Layout>
     </main>
   );
