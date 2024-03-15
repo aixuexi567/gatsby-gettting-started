@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import { StaticImage } from 'gatsby-plugin-image';
 const AboutPage = () => {
   return (
     <main>
@@ -13,6 +14,7 @@ const AboutPage = () => {
           classmate.{' '}
         </p>
         <p>We haven't see each other in 10 years, and I miss her very much.</p>
+        <StaticImage alt="one gile" src="../images/1girl.png" />
       </Layout>
     </main>
   );
