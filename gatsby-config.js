@@ -17,7 +17,16 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
-    'gatsby-plugin-mdx',
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+          },
+        ],
+      },
+    },
     'gatsby-transformer-sharp',
   ],
 };
