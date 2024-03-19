@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className={headerTitle}>
       <h1>{data.site.siteMetadata.title}</h1>
-      <h3>buildTime: {data.siteBuildMetadata.buildTime}</h3>
+      {/* <h3>buildTime: {data.siteBuildMetadata.buildTime}</h3> */}
     </header>
   );
 };

@@ -7,5 +7,15 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
     description: 'first gatsby stie for learning',
   },
-  plugins: ['gatsby-plugin-image', 'gatsby-plugin-sharp'],
+  plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/blog`,
+      },
+    },
+  ],
 };
